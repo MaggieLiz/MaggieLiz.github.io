@@ -2,31 +2,12 @@
 
 
 body {
-  background-color: pink;
-  background-size: cover;
   font-family: 'Fredericka the Great', cursive;
-}
-header {
-  width: 100%;
+  background-color: pink;
+  background-image: url('./assets/watercolor.png');
 }
 
 h1 {
   font-size: 75px;
   text-align: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  margin: 100px;
-}
-
-.project-container {
-  display: flex;
-}
-
-.project-wrapper {
-  display: flex;
 }
