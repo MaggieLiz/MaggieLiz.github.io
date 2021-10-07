@@ -3,16 +3,16 @@
 
 body {
   font-family: 'Fredericka the Great', cursive;
-  background-color: pink;
+  color: #3B636B;
   background-image: url('../assets/watercolor.png');
 }
 
 h1 {
-  color: #5B8C81;
+  color: #3B636B;
   font-size: 150px;
   text-align: center;
   margin: 0px;
-  text-shadow: 4px 4px 8px pink;
+  text-shadow: 4px 4px 8px #C3B0B8;
 }
 
 .grow { 
@@ -42,8 +42,7 @@ h1 {
 
 header p {
   font-size: 45px;
-  color: #5B8C81;
-  text-shadow: 2px 2px 4px pink;
+  text-shadow: 2px 2px 4px #C3B0B8;
   margin-bottom: 10px;
 }
 
@@ -52,22 +51,20 @@ header p {
   margin-bottom: 20px;
   width: 60%;
   justify-content: space-evenly;
-  text-shadow: 4px 4px 8px pink;
-  color: #5B8C81;
+  text-shadow: 4px 4px 8px #C3B0B8;
 }
 
 .contacts-wrapper i {
   font-size: 50px;
+  color: #3B636B;
 }
 
 .contacts-wrapper a {
   text-decoration: none;
-  color: #5B8C81;
 }
 
 .tech-container {
-  color: #5B8C81;
-  text-shadow: 4px 4px 8px pink;
+  text-shadow: 4px 4px 8px #C3B0B8;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -86,7 +83,6 @@ header p {
 
 .tech-container hr {
   width: 70%;
-  color: #5B8C81;
 }
 
 .tech-wrapper {
@@ -168,7 +164,6 @@ header p {
 .my-projects-container {
   margin-top: 50px;
   background-color: white;
-  color: #5B8C81;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,7 +173,7 @@ header p {
 
 .my-projects-container h2 {
   font-size: 40px;
-  text-shadow: 4px 4px 8px pink;
+  text-shadow: 4px 4px 8px #C3B0B8;
 }
 
 .projects-container {
@@ -190,7 +185,6 @@ header p {
 
 .projects-container hr {
   width: 90%;
-  color: #5B8C81;
 }
 
 .project-wrapper {
@@ -211,13 +205,12 @@ header p {
 }
 
 .project-description h3 {
-  text-shadow: 4px 4px 8px pink;
+  text-shadow: 4px 4px 8px #C3B0B8;
 }
 
 .my-interests-container {
   margin-top: 50px;
   background-color: white;
-  color: #5B8C81;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -227,10 +220,15 @@ header p {
 
 .my-interests-container h2 {
   text-align: center;
-  
   font-size: 40px;
-  text-shadow: 4px 4px 8px pink;
-  
+  text-shadow: 4px 4px 8px #C3B0B8;
+  margin-bottom: 5px;
+}
+
+.my-interests-container hr {
+  width: 80%;
+  color: #3B636B;
+  margin-bottom: 10px;
 }
 
 .interests-container {
