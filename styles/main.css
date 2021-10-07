@@ -169,6 +169,7 @@ header p {
   align-items: center;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 10px;
 }
 
 .my-projects-container h2 {
@@ -210,6 +211,7 @@ header p {
 
 .my-interests-container {
   margin-top: 50px;
+  padding-bottom: 23px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -232,8 +234,8 @@ header p {
 }
 
 .interests-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: center;
 }
 
 .interest-wrapper {
@@ -241,7 +243,6 @@ header p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
   margin: 10px 20px;
 }
 
@@ -268,4 +269,49 @@ footer .contacts-wrapper {
 
 footer i {
   margin: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 75px;
+  }
+
+  header p {
+    font-size: 30px;
+  }
+
+  .tech-container {
+    border-radius: 10px;
+    height: 275px;
+  }
+
+  .tech-wrapper {
+    column-gap: 2px;
+  }
+
+  .tech-wrapper i {
+    font-size: 25px;
+  }
+
+  .project-wrapper {
+    flex-direction: column;
+  }
+
+  .project-wrapper img {
+    width: 60vw;
+    padding: 5px;
+  }
+
+  .mugglemore {
+    flex-direction: column-reverse;
+  }
+
+  .tic-tac-toe {
+    flex-direction: column-reverse;
+  }
+
+  .interest-wrapper img {
+    width: 50px;
+  }
 }
