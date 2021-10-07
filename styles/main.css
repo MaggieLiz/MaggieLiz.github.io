@@ -91,6 +91,7 @@ header p {
   grid-template-rows: repeat(3);
   row-gap: 30px;
   column-gap: 10px;
+  margin-top: 30px;
 }
 
 .fa-free-code-camp {
@@ -178,7 +179,6 @@ header p {
 }
 
 .projects-container {
-  background-color: white;
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
@@ -207,6 +207,11 @@ header p {
 
 .project-description h3 {
   text-shadow: 4px 4px 8px #C3B0B8;
+}
+
+.project-description a {
+  text-decoration: none;
+  color: #3B636B;
 }
 
 .my-interests-container {
@@ -288,6 +293,7 @@ footer i {
 
   .tech-wrapper {
     column-gap: 2px;
+    margin-top: 10px;
   }
 
   .tech-wrapper i {
