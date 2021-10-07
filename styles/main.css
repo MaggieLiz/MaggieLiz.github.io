@@ -81,6 +81,12 @@ header p {
 
 .tech-container h2 {
   font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.tech-container hr {
+  width: 70%;
+  color: #5B8C81;
 }
 
 .tech-wrapper {
@@ -210,23 +216,26 @@ header p {
 
 .my-interests-container {
   margin-top: 50px;
+  background-color: white;
   color: #5B8C81;
   display: flex;
   flex-direction: column;
   width: 100%;
-  
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .my-interests-container h2 {
   text-align: center;
-  background-color: white;
+  
   font-size: 40px;
   text-shadow: 4px 4px 8px pink;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  
 }
 
 .interests-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .interest-wrapper {
@@ -234,17 +243,31 @@ header p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  border-radius: 50%;
-  margin: 10px;
+  height: 300px;
+  margin: 10px 20px;
 }
 
-.interest-wrapper h3 p {
-  width: 70%;
+.interest-wrapper img {
+  width: 75px;
 }
 
-footer {
-  background-color: white;
+.interest-wrapper p {
   text-align: center;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+footer .contacts-wrapper {
+  width: 100%;
+  justify-content: center;
+}
+
+footer i {
+  margin: 10px;
+}
