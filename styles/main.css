@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
+:root {
+  --heading-height: 20em;
+}
 
 body {
   font-family: 'Fredericka the Great', cursive;
   color: #3B636B;
   background-image: url('../assets/watercolor.png');
-}
-
-h1 {
-  color: #3B636B;
-  font-size: 150px;
-  text-align: center;
+  min-height: 100vh;
   margin: 0px;
-  text-shadow: 4px 4px 8px #C3B0B8;
 }
 
 .grow { 
@@ -23,27 +20,51 @@ h1 {
   transform: scale(1.5); 
   }
 
+header {
+  position: fixed;
+  width: 100%;
+  height: var(--heading-height);
+}
+
+header h1 {
+  color: #3B636B;
+  font-size: 100px;
+  text-align: center;
+  margin: 0px;
+  text-shadow: 4px 4px 8px #C3B0B8;
+}
+
+header p {
+  text-align: center;
+  font-size: 45px;
+  text-shadow: 2px 2px 4px #C3B0B8;
+  margin: 10px auto 20px auto;
+}
+
+header::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 7em;
+	width: 100%;
+	height: calc(var(--heading-height) + 10em);
+	z-index: -1;
+	transform: skewY(-8.5deg);
+	background: 
+		/* linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), */
+		/* url('../assets/watercolor.png') no-repeat center, */
+		linear-gradient(#fdcfe4, white);
+	background-size: cover;
+	border-bottom: 1px solid #fdcfe4;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px;
-}
-
-.header-container {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-}
-
-header p {
-  font-size: 45px;
-  text-shadow: 2px 2px 4px #C3B0B8;
-  margin-bottom: 10px;
+  margin: 10px 50px 50px 50px;
+  padding: calc(var(--heading-height) - 5vw) 4em 40px;
 }
 
 .contacts-wrapper {
@@ -63,9 +84,33 @@ header p {
   text-decoration: none;
 }
 
+.about-container {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-container h2 {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.about-container hr {
+  width: 85%;
+  color: #3B636B;
+}
+
+.about-container p {
+  padding: 20px 30px;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
 .tech-container {
-  text-shadow: 4px 4px 8px #C3B0B8;
   margin-top: 50px;
+  text-shadow: 4px 4px 8px #C3B0B8;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -83,8 +128,10 @@ header p {
 
 .tech-container hr {
   width: 70%;
+  color: #3B636B;
 }
 
+/* Setting up grid and positioning icons */
 .tech-wrapper {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
@@ -214,6 +261,10 @@ header p {
   color: #3B636B;
 }
 
+.project-description p {
+  line-height: 1.6;
+}
+
 .my-interests-container {
   margin-top: 50px;
   padding-bottom: 23px;
@@ -267,6 +318,17 @@ header p {
   display: block;
 }
 
+footer {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/ 
+  height: 60px;
+  background: linear-gradient(white, #fee4f0);
+  border-top: 1px solid #fdcfe4;
+}
+
 footer .contacts-wrapper {
   width: 100%;
   justify-content: center;
@@ -279,7 +341,7 @@ footer i {
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 75px;
+    font-size: 20px;
   }
 
   header p {
