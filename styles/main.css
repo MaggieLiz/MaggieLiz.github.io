@@ -90,6 +90,7 @@ header::before {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 10px;
 }
 
 .about-container h2 {
@@ -338,14 +339,26 @@ footer i {
   margin: 10px;
 }
 
+.attribute {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
 
 @media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 20px;
+  header h1 {
+    font-size: 50px;
+    padding: 20px 0 0 0;
   }
 
   header p {
     font-size: 30px;
+  }
+
+  .main-container {
+    margin: 2px;
+    padding: 270px 5px 0 5px;
   }
 
   .tech-container {
@@ -364,6 +377,7 @@ footer i {
 
   .project-wrapper {
     flex-direction: column;
+    align-items: center;
   }
 
   .project-wrapper img {
@@ -379,7 +393,16 @@ footer i {
     flex-direction: column-reverse;
   }
 
+  .my-interests-container {
+    margin-bottom: 50px;
+  }
+
   .interest-wrapper img {
     width: 50px;
+  }
+
+  .attribute {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 }
