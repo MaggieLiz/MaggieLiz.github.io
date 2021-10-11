@@ -115,10 +115,10 @@ header::before {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 450px;
+  height: 520px;
   align-items: center;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
@@ -136,80 +136,237 @@ header::before {
 .tech-wrapper {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(3);
+  grid-template-rows: repeat(4);
   row-gap: 30px;
   column-gap: 10px;
   margin-top: 30px;
-}
-
-.fa-free-code-camp {
-  grid-row: 1;
-  grid-column: 3;
-}
-
-.fa-codepen {
-  grid-row: 1;
-  grid-column: 5;
-}
-
-.fa-terminal {
-  grid-row: 1;
-  grid-column: 7;
-}
-
-.fa-react {
-  grid-row: 1;
-  grid-column: 9;
-}
-
-.fa-node {
-  grid-row: 2;
-  grid-column: 2;
-}
-.fa-js-square {
-  grid-row: 2;
-  grid-column: 4;
-}
-
-.fa-css3 {
-  grid-row: 2;
-  grid-column: 6;
-}
-
-.fa-python {
-  grid-row: 2;
-  grid-column: 8;
-}
-
-.fa-html5 {
-  grid-row: 2;
-  grid-column: 10;
-}
-
-.fa-sass {
-  grid-row: 3;
-  grid-column: 3;
-}
-
-.fa-npm {
-  grid-row: 3;
-  grid-column: 5;
-}
-
-.fa-trello {
-  grid-row: 3;
-  grid-column: 7;
-}
-
-.fa-git-alt {
-  grid-row: 3;
-  grid-column: 9;
+  justify-items: center;
 }
 
 .tech-wrapper i {
   font-size: 60px;
 }
 
+.tech-wrapper div p {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.mongoDB {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.devicon-mongodb-plain:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.freecodecamp {
+  grid-row: 1;
+  grid-column: 4;
+}
+
+.fa-free-code-camp:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.codepen {
+  grid-row: 1;
+  grid-column: 6;
+}
+
+.fa-codepen:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.terminal {
+  grid-row: 1;
+  grid-column: 8;
+}
+
+.fa-terminal:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.react {
+  grid-row: 1;
+  grid-column: 10;
+}
+
+.fa-react:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.django {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.devicon-django-plain:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.node {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.fa-node:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.js {
+  grid-row: 2;
+  grid-column: 5;
+}
+
+.fa-js-square:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.css3 {
+  grid-row: 2;
+  grid-column: 7;
+}
+
+.fa-css3:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.python {
+  grid-row: 2;
+  grid-column: 9;
+}
+
+.fa-python:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.html5 {
+  grid-row: 2;
+  grid-column: 11;
+}
+
+.fa-html5:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.express {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.devicon-express-original:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.sass {
+  grid-row: 3;
+  grid-column: 4;
+}
+
+.fa-sass:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.npm {
+  grid-row: 3;
+  grid-column: 6;
+}
+
+
+.fa-npm:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.trello {
+  grid-row: 3;
+  grid-column: 8;
+}
+
+.fa-trello:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.git-alt {
+  grid-row: 3;
+  grid-column: 10;
+}
+
+.fa-git-alt:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.postgresql {
+  grid-row: 4;
+  grid-column: 1;
+}
+
+.devicon-postgresql-plain:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.heroku {
+  grid-row: 4;
+  grid-column: 3;
+}
+
+.devicon-heroku-original:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.bootstrap {
+  grid-row: 4;
+  grid-column: 5;
+}
+
+.devicon-bootstrap-plain:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.bulma {
+  grid-row: 4;
+  grid-column: 7;
+}
+
+.devicon-bulma-plain:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+.github {
+  grid-row: 4;
+  grid-column: 9;
+}
+
+.devicon-github-original:hover + .hide {
+  display: block;
+  color: #3B636B;
+}
+
+/* PROJECTS STYLING */
 .my-projects-container {
   margin-top: 50px;
   background-color: white;
